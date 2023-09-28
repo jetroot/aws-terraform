@@ -4,20 +4,19 @@ Provision infrastructure using terraform for AWS Cloud
 ## Install
 1. Install terraform
 2. Install aws cli
-3. Get your access & secret keys from Aws
-
-2. Run aws configure
+3. Get your access & secret keys from AWS
+4. Run aws configure
 ``` bash
     aws configure
 ```
 
 ## Configure
-1. Initialize terraform
+1. Initializes a working directory containing Terraform configuration files. 
 ``` bash
     terraform init
 ```
 
-2. Check what will happen
+2. preview the changes that Terraform plans to make to the infrastructure
 ``` bash
     terraform plan
 ```
@@ -28,12 +27,12 @@ Provision infrastructure using terraform for AWS Cloud
 ```
 
 ## Running
-1. Go to instances in aws
+1. Go to instances in `AWS` console
 2. Copy IP4
 3. Paste it in the browser 
 
-## Shutdown 
-=> Don't forget to shutdown your resources
+## Shut down 
+=> Don't forget to shut down your resources
 ``` bash
     terraform destroy
 ```
